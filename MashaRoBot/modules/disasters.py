@@ -539,7 +539,7 @@ def devlist(update: Update, context: CallbackContext):
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Emcee powerhouse Members ⚡️:</b>\n"
+    reply = "<b>Scenario powerhouse Members ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -560,7 +560,7 @@ Group admins/group owners do not need these commands.
  ❍ /satans*:* Lists all satan disasters
  ❍ /monsters*:* Lists all Monster disasters
  ❍ /immortals*:* Lists all Immortal disasters
- ❍ /powerhouse*:* Lists all Emcee powerhouse members
+ ❍ /powerhouse*:* Lists all Scenario powerhouse members
  ❍ /addlegend*:* Adds a user to Legend
  ❍ /addsatan*:* Adds a user to Satan
  ❍ /addmonster*:* Adds a user to Monster
