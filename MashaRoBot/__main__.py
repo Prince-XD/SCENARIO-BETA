@@ -74,15 +74,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello My name is` [Emcee](https://telegra.ph/file/7d87151a7172577be4b0b.jpg) 
+`Hello My name is` [Scenario](https://telegra.ph/file/31d67cdc49798252d1df6.jpg) 
 `I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.
-**Powered By** @DaisyXNews.` 
+**Powered By** @scenariobot_support.` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD EMCEE TO YOUR GROUP ➕️", url="t.me/Emcee_Bot?startgroup=true"),
+            text="➕️ ADD SCENARIO TO YOUR GROUP ➕️", url="t.me/scenario_robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
@@ -90,12 +90,12 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💾 SOURCE", url="t.me/DaisyXNews"),
+            text="💾 SOURCE", url="t.me/scenariobot_support"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/Emcee_Support"),
+            text="👥 SUPPORT", url="https://t.me/scenariobot_support"),
     ],
     [  
-        InlineKeyboardButton(text="🇮🇳 EMCEE DEVS", url="t.me/EmceeDevs"
+        InlineKeyboardButton(text="🇮🇳 SCENARIO DEVS", url="t.me/scenariobot_support"
     ),
     ], 
 ]
@@ -350,7 +350,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *EMCEE*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *SCENARIO*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -358,8 +358,8 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://t.me/DaisyXNews).
-                 If you have any question about Emcee, let us know at @Emceesupport.""",
+                 Here is the [💾Repository](https://t.me/scenariobot_support).
+                 If you have any question about Scenario, let us know at @scenariobot_support.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -385,8 +385,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Emcee*
-                 \nHere is the [Source Code](https://t.me/DaisyXNews) .""",
+            text=""" Hi..🤗 I'm *Scenario*
+                 \nHere is the [Source Code](https://t.me/scenariobot_support) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
@@ -681,7 +681,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Emcee is back to serve you.✨")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Scenario is back to serve you.✨")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
