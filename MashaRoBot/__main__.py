@@ -95,10 +95,12 @@ buttons = [
             text="💾 SOURCE", url="t.me/scenariobot_support"),
         InlineKeyboardButton(
             text="👥 SUPPORT", url="https://t.me/scenariobot_support"),
+        
     ],
     [  
         InlineKeyboardButton(text="🇮🇳 SCENARIO DEVS", url="t.me/scenariobot_support"),
-    ),
+        
+
     ], 
 ]
 
