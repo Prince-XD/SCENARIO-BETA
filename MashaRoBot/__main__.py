@@ -107,7 +107,7 @@ buttons = [
 
 HELP_STRINGS = """
 Use My All FEATURES
-
+"""
 
 DONATE_STRING = """No need.. I'm rich"""
 
